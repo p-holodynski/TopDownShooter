@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class EnemyMovement : MonoBehaviour {
+public class EnemyMovement : MonoBehaviour 
+{
 
 	Transform player; // reference to playerObject
 	//PlayerHealth playerHealth;
