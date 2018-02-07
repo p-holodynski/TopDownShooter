@@ -56,6 +56,15 @@ public class PlayerMovement : MonoBehaviour
 		}
 	}
 
+	void OnCollisionEnter(Collision collision)
+	{
+		if (collision.gameObject.tag == "Wall") {
+			Debug.Log ("touch");
+			foreach (ContactPoint contact in collision.contacts) {
+				Debug.DrawRay(contact.point, contact.normal, Color.green, 2, false); // TODO contact point is not in the center of the playerbody
+			}
+		}
+	}
 
 
 }
