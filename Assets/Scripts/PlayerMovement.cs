@@ -6,7 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {
 
 	public float speed = 6f;
-
+	public float dashDistance = 10f;
 	Vector3 movement;
 	Rigidbody playerRigidBody;
 	int floorMask;
@@ -29,6 +29,11 @@ public class PlayerMovement : MonoBehaviour
 
 		Move (h, v);
 		Turning ();
+
+		if (Input.GetButtonDown ("Jump")) {
+			Dash ();
+		}
+
 	}
 
 	void Move(float h, float v)
@@ -54,6 +59,23 @@ public class PlayerMovement : MonoBehaviour
 			Quaternion newRotation = Quaternion.LookRotation (playerToMouse);
 			playerRigidBody.MoveRotation (newRotation);
 		}
+	}
+
+	void Dash()
+	{
+		// needs fixing!!!
+		Vector3 dashDirection = playerRigidBody.rotation * Vector3.forward;
+		Vector3 dashVector = dashDirection * dashDistance;
+		Vector3 targetPosition;
+
+		//		Ray dashRay = new Ray (transform.position, dashDirection);
+		//		RaycastHit rayHit;
+		//		if (Physics.Raycast (dashRay, out rayHit, dashDistance)) {
+		//			
+		//		}
+		targetPosition = transform.position + dashVector;
+
+		playerRigidBody.MovePosition (targetPosition);
 	}
 
 	void OnCollisionEnter(Collision collision)
