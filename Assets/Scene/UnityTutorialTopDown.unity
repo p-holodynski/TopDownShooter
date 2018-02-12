@@ -483,6 +483,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 6
+  dashDistance: 10
+  timer: 3
 --- !u!54 &381687336
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -491,8 +493,8 @@ Rigidbody:
   m_GameObject: {fileID: 381687334}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: Infinity
-  m_AngularDrag: Infinity
+  m_Drag: 0
+  m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -1641,8 +1643,8 @@ Rigidbody:
   m_GameObject: {fileID: 1586740679}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: Infinity
-  m_AngularDrag: Infinity
+  m_Drag: 0
+  m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0

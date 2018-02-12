@@ -11,6 +11,7 @@ public class PlayerMovement : MonoBehaviour
 	Rigidbody playerRigidBody;
 	int floorMask;
 	float camRayLength = 100f;
+	public float timer = 0;
 
 	// called automatically
 	// called whenever the script is enabled or not, good for setting up references
@@ -30,10 +31,12 @@ public class PlayerMovement : MonoBehaviour
 		Move (h, v);
 		Turning ();
 
-		if (Input.GetButtonDown ("Jump")) {
+		timer += Time.deltaTime;
+		if (Input.GetButtonDown ("Jump") && timer >= 3) 
+		{
 			Dash ();
+			timer = 0;
 		}
-
 	}
 
 	void Move(float h, float v)
@@ -63,19 +66,7 @@ public class PlayerMovement : MonoBehaviour
 
 	void Dash()
 	{
-		// needs fixing!!!
-		Vector3 dashDirection = playerRigidBody.rotation * Vector3.forward;
-		Vector3 dashVector = dashDirection * dashDistance;
-		Vector3 targetPosition;
-
-		//		Ray dashRay = new Ray (transform.position, dashDirection);
-		//		RaycastHit rayHit;
-		//		if (Physics.Raycast (dashRay, out rayHit, dashDistance)) {
-		//			
-		//		}
-		targetPosition = transform.position + dashVector;
-
-		playerRigidBody.MovePosition (targetPosition);
+		playerRigidBody.AddForce(transform.forward * dashDistance, ForceMode.Impulse);
 	}
 
 	void OnCollisionEnter(Collision collision)
