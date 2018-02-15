@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class EnemyMovement : MonoBehaviour 
+public class EnemyMovement : LivingEntity 
 {
 
 	Transform player; // reference to playerObject
@@ -12,12 +12,15 @@ public class EnemyMovement : MonoBehaviour
 	NavMeshAgent nav; // reference to navMeshAgent
 
 
-	void Awake()
+	protected override void Start()
 	{
+		base.Start ();
 		player = GameObject.FindGameObjectWithTag ("Player").transform;
 		//playerHealth = player.GetComponent<PlayerHealth>();
 		//enemyHealth = GetComponent<EnemyHealth>();
 		nav = GetComponent<NavMeshAgent>();
+
+		StartCoroutine (UpdatePath ());
 	}
 
 
@@ -26,12 +29,24 @@ public class EnemyMovement : MonoBehaviour
 	{
 //		if(enemyHealth.currentHealth > 0 && playerHealth.currentHealth > 0)
 //		{
-			nav.SetDestination (player.position);
+			
 //		}
 //		else
 //		{
 //			nav.enabled = false;
 //		}
 			
+	}
+
+	IEnumerator UpdatePath(){
+		float refreshRate = .25f;
+
+		while (player != null) {
+			//Vector3 playerPosition = new Vector3 (player.position.x, 0, player.position.z);
+			if (!dead) {
+				nav.SetDestination (player.position);
+			}
+			yield return new WaitForSeconds (refreshRate);
+		}
 	}
 }
