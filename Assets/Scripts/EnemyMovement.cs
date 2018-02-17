@@ -11,8 +11,8 @@ public class EnemyMovement : LivingEntity
 	//PlayerHealth playerHealth;
 	//EnemyHealth enemyHealth;
 	NavMeshAgent nav; // reference to navMeshAgent
-	Material skinMaterial;
-	Color originalColor;
+	//Material skinMaterial;
+	//Color originalColor;
 	LivingEntity targetEntinty;
 
 	//float attackDistanceTreshhold = .5f;
@@ -30,8 +30,8 @@ public class EnemyMovement : LivingEntity
 	{
 		base.Start ();
 		nav = GetComponent<NavMeshAgent>();
-		skinMaterial = GetComponent<Renderer> ().material;
-		originalColor = skinMaterial.color;
+		//skinMaterial = GetComponent<Renderer> ().material;
+		//originalColor = skinMaterial.color;
 
 		if (GameObject.FindGameObjectWithTag ("Player") != null) {
 			currentState = State.Chasing;
