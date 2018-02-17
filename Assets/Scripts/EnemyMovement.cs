@@ -13,12 +13,15 @@ public class EnemyMovement : LivingEntity
 	NavMeshAgent nav; // reference to navMeshAgent
 	Material skinMaterial;
 	Color originalColor;
+	LivingEntity targetEntinty;
 
 	//float attackDistanceTreshhold = .5f;
-	float timeBetweenAttacks = 1;
-	float nextAttackTime;
-	float myCollisionRadius;
-	float playerCollisionRadius;
+	//float timeBetweenAttacks = 1;
+	//float nextAttackTime;
+	//float myCollisionRadius;
+	//float playerCollisionRadius;
+
+	bool hasTarget;
 
 	public enum State {Idle, Chasing, Attacking};
 	State currentState;
@@ -30,14 +33,24 @@ public class EnemyMovement : LivingEntity
 		skinMaterial = GetComponent<Renderer> ().material;
 		originalColor = skinMaterial.color;
 
-		currentState = State.Chasing;
-		player = GameObject.FindGameObjectWithTag ("Player").transform;
-		//playerHealth = player.GetComponent<PlayerHealth>();
-		//enemyHealth = GetComponent<EnemyHealth>();
-		//myCollisionRadius = GetComponent<CapsuleCollider>().radius;
-		//playerCollisionRadius = GetComponent<SphereCollider> ().radius;
+		if (GameObject.FindGameObjectWithTag ("Player") != null) {
+			currentState = State.Chasing;
+			hasTarget = true;
+			player = GameObject.FindGameObjectWithTag ("Player").transform;
+			targetEntinty = player.GetComponent<LivingEntity> ();
+			targetEntinty.OnDeath += OnPlayerDeath;
+			//playerHealth = player.GetComponent<PlayerHealth>();
+			//enemyHealth = GetComponent<EnemyHealth>();
+			//myCollisionRadius = GetComponent<CapsuleCollider>().radius;
+			//playerCollisionRadius = GetComponent<SphereCollider> ().radius;
 
-		StartCoroutine (UpdatePath ());
+			StartCoroutine (UpdatePath ());
+		}
+	}
+
+	void OnPlayerDeath(){
+		hasTarget = false;
+		currentState = State.Idle;
 	}
 
 
@@ -90,7 +103,7 @@ public class EnemyMovement : LivingEntity
 	IEnumerator UpdatePath(){
 		float refreshRate = .25f;
 
-		while (player != null) {
+		while (hasTarget) {
 			if (currentState == State.Chasing) {
 				//Vector3 dirToTarget = (player.position - transform.position).normalized;
 				//Vector3 playerPosition = player.position - dirToTarget * (myCollisionRadius + playerCollisionRadius + attackDistanceTreshhold/2);
