@@ -10,7 +10,7 @@ public class EnemyMovement : LivingEntity
 	Transform player; // reference to playerObject
 	//PlayerHealth playerHealth;
 	//EnemyHealth enemyHealth;
-	NavMeshAgent nav; // reference to navMeshAgent
+	public NavMeshAgent nav; // reference to navMeshAgent
 	//Material skinMaterial;
 	//Color originalColor;
 	LivingEntity targetEntinty;

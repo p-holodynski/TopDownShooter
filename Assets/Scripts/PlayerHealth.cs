@@ -78,7 +78,7 @@ public class PlayerHealth : MonoBehaviour {
 	}
 
 
-	void Death ()
+	public void Death ()
 	{
 		// Set the death flag so this function won't be called again.
 		isDead = true;
@@ -96,5 +96,6 @@ public class PlayerHealth : MonoBehaviour {
 		// Turn off the movement and shooting scripts.
 		playerMovement.enabled = false;
 		playerShooting.enabled = false;
+		FindObjectOfType<GameUI> ().OnGameOver();
 	}       
 }

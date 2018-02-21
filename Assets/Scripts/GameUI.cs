@@ -2,19 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameUI : MonoBehaviour {
 
 	public Image fadePlane;
 	public GameObject gameOverUI;
-
-
-	// Use this for initialization
-	void Start () {
-		FindObjectOfType<PlayerMovement> ().OnDeath += OnGameOver;
-	}
 	
-	void OnGameOver(){
+	public void OnGameOver(){
 		StartCoroutine (Fade (Color.clear, Color.black, 1));
 		gameOverUI.SetActive (true);
 	}
@@ -28,6 +23,11 @@ public class GameUI : MonoBehaviour {
 			fadePlane.color = Color.Lerp (from, to, percent);
 			yield return null;
 		}
+	}
+
+	// UI Input
+	public void StartNewGame(){
+		SceneManager.LoadScene ("UnityTutorialTopDown");
 	}
 
 }
