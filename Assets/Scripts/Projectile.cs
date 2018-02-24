@@ -29,15 +29,15 @@ public class Projectile : MonoBehaviour {
 		RaycastHit hit;
 
 		if (Physics.Raycast (ray, out hit, moveDistance, collisionMask, QueryTriggerInteraction.Collide)) {
-			OnHitObject (hit);
+			OnHitObject (hit.collider, hit.point);
 		}
 	}
 
-	void OnHitObject(RaycastHit hit){
+	void OnHitObject(Collider c, Vector3 hitPoint){
 		//print (hit.collider.gameObject.name);
-		IDamageable damageableObject = hit.collider.GetComponent<IDamageable>();
+		IDamageable damageableObject = c.GetComponent<IDamageable>();
 		if (damageableObject != null) {
-			damageableObject.TakeHit (damage, hit);
+			damageableObject.TakeHit (damage, hitPoint, transform.forward);
 		}
 		GameObject.Destroy (gameObject);
 	}

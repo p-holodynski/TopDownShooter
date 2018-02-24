@@ -14,6 +14,7 @@ public class EnemyMovement : LivingEntity
 	//Material skinMaterial;
 	//Color originalColor;
 	LivingEntity targetEntinty;
+	public ParticleSystem deathEffect;
 
 	//float attackDistanceTreshhold = .5f;
 	//float timeBetweenAttacks = 1;
@@ -46,6 +47,15 @@ public class EnemyMovement : LivingEntity
 
 			StartCoroutine (UpdatePath ());
 		}
+	}
+
+	public override void TakeHit(float damage, Vector3 hitPoint, Vector3 hitDirection)
+	{
+
+		if (damage >= health) {
+			Destroy(Instantiate (deathEffect.gameObject, hitPoint, Quaternion.FromToRotation (Vector3.forward, hitDirection)) as GameObject, deathEffect.main.startLifetimeMultiplier);
+		}
+		base.TakeHit (damage, hitPoint, hitDirection);
 	}
 
 	void OnPlayerDeath(){
