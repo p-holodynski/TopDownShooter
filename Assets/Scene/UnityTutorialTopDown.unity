@@ -197,7 +197,7 @@ GameObject:
   - component: {fileID: 26687964}
   - component: {fileID: 26687963}
   - component: {fileID: 26687962}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Obstacle(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -295,7 +295,7 @@ GameObject:
   - component: {fileID: 34485706}
   - component: {fileID: 34485708}
   - component: {fileID: 34485707}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Navmesh Mask(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -641,7 +641,7 @@ GameObject:
   - component: {fileID: 106198172}
   - component: {fileID: 106198171}
   - component: {fileID: 106198170}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Obstacle(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1059,7 +1059,7 @@ GameObject:
   - component: {fileID: 140821177}
   - component: {fileID: 140821176}
   - component: {fileID: 140821175}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Obstacle(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1372,7 +1372,7 @@ GameObject:
   - component: {fileID: 192584324}
   - component: {fileID: 192584323}
   - component: {fileID: 192584322}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Obstacle(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1538,7 +1538,7 @@ GameObject:
   - component: {fileID: 241099575}
   - component: {fileID: 241099577}
   - component: {fileID: 241099576}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Navmesh Mask(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1597,7 +1597,7 @@ GameObject:
   - component: {fileID: 243533600}
   - component: {fileID: 243533599}
   - component: {fileID: 243533598}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Obstacle(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2055,7 +2055,7 @@ GameObject:
   - component: {fileID: 315970663}
   - component: {fileID: 315970662}
   - component: {fileID: 315970661}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Obstacle(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2547,7 +2547,7 @@ GameObject:
   - component: {fileID: 410873765}
   - component: {fileID: 410873764}
   - component: {fileID: 410873763}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Obstacle(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3008,7 +3008,7 @@ GameObject:
   - component: {fileID: 473768589}
   - component: {fileID: 473768588}
   - component: {fileID: 473768587}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Obstacle(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3179,7 +3179,7 @@ GameObject:
   - component: {fileID: 497813173}
   - component: {fileID: 497813172}
   - component: {fileID: 497813171}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Obstacle(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3634,7 +3634,7 @@ GameObject:
   - component: {fileID: 640379295}
   - component: {fileID: 640379294}
   - component: {fileID: 640379293}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Obstacle(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3944,7 +3944,7 @@ GameObject:
   - component: {fileID: 658841158}
   - component: {fileID: 658841157}
   - component: {fileID: 658841156}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Obstacle(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4079,7 +4079,7 @@ GameObject:
   - component: {fileID: 670359646}
   - component: {fileID: 670359645}
   - component: {fileID: 670359644}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Obstacle(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4462,7 +4462,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 723626626}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Generated Map
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4699,7 +4699,7 @@ GameObject:
   - component: {fileID: 751218545}
   - component: {fileID: 751218544}
   - component: {fileID: 751218543}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Obstacle(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5086,7 +5086,7 @@ GameObject:
   - component: {fileID: 817109206}
   - component: {fileID: 817109205}
   - component: {fileID: 817109204}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Obstacle(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5666,7 +5666,7 @@ GameObject:
   - component: {fileID: 898950310}
   - component: {fileID: 898950309}
   - component: {fileID: 898950308}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Obstacle(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5911,7 +5911,7 @@ GameObject:
   - component: {fileID: 947629878}
   - component: {fileID: 947629877}
   - component: {fileID: 947629876}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Obstacle(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6428,7 +6428,7 @@ GameObject:
   - component: {fileID: 1078020116}
   - component: {fileID: 1078020118}
   - component: {fileID: 1078020117}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Navmesh Mask(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6703,7 +6703,7 @@ GameObject:
   - component: {fileID: 1147084564}
   - component: {fileID: 1147084563}
   - component: {fileID: 1147084562}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Obstacle(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6803,7 +6803,7 @@ GameObject:
   - component: {fileID: 1152740161}
   - component: {fileID: 1152740160}
   - component: {fileID: 1152740159}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Obstacle(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7620,6 +7620,92 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1270730782}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1279064451
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1279064455}
+  - component: {fileID: 1279064454}
+  - component: {fileID: 1279064453}
+  - component: {fileID: 1279064452}
+  m_Layer: 8
+  m_Name: Plane
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!23 &1279064452
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1279064451}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!64 &1279064453
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1279064451}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!33 &1279064454
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1279064451}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1279064455
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1279064451}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 5.6686134, y: 1, z: 5.090527}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!21 &1280525751
 Material:
   serializedVersion: 6
@@ -8244,7 +8330,7 @@ GameObject:
   - component: {fileID: 1426444449}
   - component: {fileID: 1426444448}
   - component: {fileID: 1426444447}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Obstacle(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8344,7 +8430,7 @@ GameObject:
   - component: {fileID: 1433876123}
   - component: {fileID: 1433876122}
   - component: {fileID: 1433876121}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Obstacle(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8657,7 +8743,7 @@ GameObject:
   - component: {fileID: 1452777385}
   - component: {fileID: 1452777384}
   - component: {fileID: 1452777383}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Obstacle(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8899,7 +8985,7 @@ GameObject:
   - component: {fileID: 1487311117}
   - component: {fileID: 1487311116}
   - component: {fileID: 1487311115}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Obstacle(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9547,7 +9633,7 @@ GameObject:
   - component: {fileID: 1567622297}
   - component: {fileID: 1567622296}
   - component: {fileID: 1567622295}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Obstacle(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10900,7 +10986,7 @@ GameObject:
   - component: {fileID: 1690953611}
   - component: {fileID: 1690953610}
   - component: {fileID: 1690953609}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Obstacle(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11000,7 +11086,7 @@ GameObject:
   - component: {fileID: 1692360169}
   - component: {fileID: 1692360168}
   - component: {fileID: 1692360167}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Obstacle(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11277,7 +11363,7 @@ GameObject:
   - component: {fileID: 1733777502}
   - component: {fileID: 1733777501}
   - component: {fileID: 1733777500}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Obstacle(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12091,7 +12177,7 @@ GameObject:
   - component: {fileID: 1826665925}
   - component: {fileID: 1826665927}
   - component: {fileID: 1826665926}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Navmesh Mask(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12934,7 +13020,7 @@ GameObject:
   - component: {fileID: 1897487008}
   - component: {fileID: 1897487007}
   - component: {fileID: 1897487006}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Obstacle(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13463,7 +13549,7 @@ GameObject:
   - component: {fileID: 1945540711}
   - component: {fileID: 1945540710}
   - component: {fileID: 1945540709}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Obstacle(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13853,7 +13939,7 @@ GameObject:
   - component: {fileID: 2101270445}
   - component: {fileID: 2101270444}
   - component: {fileID: 2101270443}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Obstacle(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14098,7 +14184,7 @@ GameObject:
   - component: {fileID: 2125643711}
   - component: {fileID: 2125643710}
   - component: {fileID: 2125643709}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Obstacle(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
