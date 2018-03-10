@@ -11,8 +11,8 @@ public class EnemyMovement : LivingEntity
 	//PlayerHealth playerHealth;
 	//EnemyHealth enemyHealth;
 	public NavMeshAgent nav; // reference to navMeshAgent
-	//Material skinMaterial;
-	//Color originalColor;
+	Material skinMaterial;
+	Color originalColor;
 	LivingEntity targetEntinty;
 	public ParticleSystem deathEffect;
 
@@ -27,18 +27,28 @@ public class EnemyMovement : LivingEntity
 	public enum State {Idle, Chasing, Attacking};
 	State currentState;
 
-	protected override void Start()
-	{
-		base.Start ();
+	void Awake(){
 		nav = GetComponent<NavMeshAgent>();
-		//skinMaterial = GetComponent<Renderer> ().material;
-		//originalColor = skinMaterial.color;
 
 		if (GameObject.FindGameObjectWithTag ("Player") != null) {
-			currentState = State.Chasing;
+
 			hasTarget = true;
 			player = GameObject.FindGameObjectWithTag ("Player").transform;
 			targetEntinty = player.GetComponent<LivingEntity> ();
+		
+		}
+	}
+
+	protected override void Start()
+	{
+		base.Start ();
+
+		skinMaterial = GetComponent<Renderer> ().material;
+		originalColor = skinMaterial.color;
+
+		if (hasTarget) {
+			currentState = State.Chasing;
+
 			targetEntinty.OnDeath += OnPlayerDeath;
 			//playerHealth = player.GetComponent<PlayerHealth>();
 			//enemyHealth = GetComponent<EnemyHealth>();
@@ -47,6 +57,19 @@ public class EnemyMovement : LivingEntity
 
 			StartCoroutine (UpdatePath ());
 		}
+	}
+
+	public void SetCharacteristics(float moveSpeed, int hitsToKillPlayer, float enemyHealth, Color skinColor){
+		nav.speed = moveSpeed;
+
+		if (hasTarget) {
+			
+		}
+		startingHealth = enemyHealth;
+
+		skinMaterial = GetComponent<Renderer> ().material;
+		skinMaterial.color = skinColor;
+		originalColor = skinMaterial.color;
 	}
 
 	public override void TakeHit(float damage, Vector3 hitPoint, Vector3 hitDirection)
